@@ -39,7 +39,7 @@ jobs:
           mkdir -p kaggle_notebooks
           kaggle kernels pull shivanisharma1297/sales-forecasting-bi-pipeline-r-d \
             -p kaggle_notebooks \
-            --force
+            
 
       - name: Commit and push if changed
         run: |
