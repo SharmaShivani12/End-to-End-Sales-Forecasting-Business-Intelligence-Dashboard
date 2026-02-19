@@ -37,7 +37,8 @@ jobs:
       - name: Pull latest Kaggle notebook
         run: |
           mkdir -p kaggle_notebooks
-          kaggle kernels pull shivanisharma1297/sales-forecasting-bi-pipeline-r-d \
+           rm -f kaggle_notebooks/*.ipynb
+           kaggle kernels pull shivanisharma1297/sales-forecasting-bi-pipeline-r-d \
             -p kaggle_notebooks \
             
 
